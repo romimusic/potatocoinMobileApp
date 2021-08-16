@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 930px)">
 </head>
 <body>
     <header class="header">
@@ -16,7 +17,7 @@
         <div class="header__tittle">
             <h1>The next revolution cryptocurrency exchange</h1>
             <p>Potatocoin helps you navigate between the different prices and trends.</p>
-            <a href="" class="header__button">Know Ours Plans <span></i></span></a>
+            <a href="#plans" class="header__button">Know Ours Plans <span></i></span></a>
         </div>
         
     </header>
@@ -28,59 +29,61 @@
                 <p>We bring information in real time of the exchange houses and the most important currencies in the world.</p>
             </div>
             <section class="main__table">
-                <div class="main__currency__table">
-                    <p class="main__currency__tittle">Currency</p>
-                    <div class="currency__table">
-                        <table>
-                            <tr>
-                                <td class="table__top--left">Bitcoin</td>
-                                <td class="table__top--right table__right">$ 1.96 <span class="down"></span></td>
-                            </tr>
-                            <tr>
-                                <td>Ethereum</td>
-                                <td class="table__right">$ 0.07 <span class="up"></span></td>
-                            </tr>
-                            <tr>
-                                <td>Ripple</td>
-                                <td class="table__right">$ 2.15 <span class="down"></span></td>
-                            </tr>
-                            <tr>
-                                <td class="table__bottom--left">Stellar</td>
-                                <td class="table__bottom--right table__right">$ 4.96 <span class="down"></span></td>
-                            </tr>
-                        </table>
+                <div class="main__table__slider">
+                    <div class="main__currency__table">
+                        <p class="main__currency__tittle">Currency</p>
+                        <div class="currency__table">
+                            <table>
+                                <tr>
+                                    <td class="table__top--left">Bitcoin</td>
+                                    <td class="table__top--right table__right">$ 1.96 <span class="down"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Ethereum</td>
+                                    <td class="table__right">$ 0.07 <span class="up"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Ripple</td>
+                                    <td class="table__right">$ 2.15 <span class="down"></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="table__bottom--left">Stellar</td>
+                                    <td class="table__bottom--right table__right">$ 4.96 <span class="down"></span></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="currency__table--date">
+                            <p> <b>Updated:</b>  01 August 2021</p>
+                        </div>
                     </div>
-                    <div class="currency__table--date">
-                        <p> <b>Updated:</b>  01 August 2021</p>
+                    
+                    <div class="main__currency__table">
+                        <p class="main__currency__tittle--comission">Commissions</p>
+                        <div class="currency__table">
+                            <table>
+                                <tr>
+                                    <td class="table__top--left">Bitrade</td>
+                                    <td class="table__top--right table__right">$ 12.96</td>
+                                </tr>
+                                <tr>
+                                    <td>Bitpreco</td>
+                                    <td class="table__right">$ 13.07</td>
+                                </tr>
+                                <tr>
+                                    <td>Novadax</td>
+                                    <td class="table__right">$ 13.15</td>
+                                </tr>
+                                <tr>
+                                    <td class="table__bottom--left">Coinext</td>
+                                    <td class="table__bottom--right table__right">$ 14.96</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="currency__table--date--blue">
+                            <p> <b>Updated:</b>  01 August 2021</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="main__currency__table">
-                    <p class="main__currency__tittle--comission">Commissions</p>
-                    <div class="currency__table">
-                        <table>
-                            <tr>
-                                <td class="table__top--left">Bitrade</td>
-                                <td class="table__top--right table__right">$ 12.96</td>
-                            </tr>
-                            <tr>
-                                <td>Bitpreco</td>
-                                <td class="table__right">$ 13.07</td>
-                            </tr>
-                            <tr>
-                                <td>Novadax</td>
-                                <td class="table__right">$ 13.15</td>
-                            </tr>
-                            <tr>
-                                <td class="table__bottom--left">Coinext</td>
-                                <td class="table__bottom--right table__right">$ 14.96</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="currency__table--date--blue">
-                        <p> <b>Updated:</b>  01 August 2021</p>
-                    </div>
-                </div>
+                </div>    
             </section>
         </section>    
         <section class="main__product__detail">
@@ -115,15 +118,53 @@
         <section class="bitcoin__img">
             <h2>Enjoy us today!</h2>
         </section>
-        <section>
+        <section id="plans" class="main__plan">
+            <div class="main__plan__tittle">
+                <h2>Choose the best plan for you.</h2>
+                <p>Any plan gives you full access to our platform.</p>
+            </div>
+            <section class="plan__slider">
+                <article class="plan__slider__card">
+                    <div class="plan__slider__info">
+                        <h3 class="plan__slider__info__tittle">Montly Plan</h3>  
+                        <p class="plan__slider__info__price"><span>$</span> 19</p>
+                        <p class="plan__slider__info__saving">* Month to month plan.</p>
+                        <button class="plan__slider__info__callAction">Choose it <span></span></button>
+                    </div>
+                </article>
 
-        </section>
-        <section>
-
+                <article class="plan__slider__card">
+                    <p  class="recommended">Recommended</p>
+                    <div class="plan__slider__info">
+                        <h3 class="plan__slider__info__tittle">Anual Plan</h3>  
+                        <p class="plan__slider__info__price"><span>$</span> 99</p>
+                        <p class="plan__slider__info__saving">* You save $ 129 compared to the monthly plan.</p>
+                        <button class="plan__slider__info__callAction">Choose it <span></span></button>
+                    </div>
+                </article>
+               
+                <article class="plan__slider__card">
+                    <div class="plan__slider__info">
+                        <h3 class="plan__slider__info__tittle">Lifetime Plan</h3>  
+                        <p class="plan__slider__info__price"><span>$</span> 199</p>
+                        <p class="plan__slider__info__saving">* You save more than $ 200 and use it forever.</p>
+                        <button class="plan__slider__info__callAction">Choose it <span></span></button>
+                    </div>
+                </article>
+            </section>
         </section>
     </main>
     <footer class="footer">
-
+        <section class="footer__left">
+            <ul>
+                <li><a href="#">Linkedin</a></li>
+                <li><a href="#">Crunchbase</a></li>
+                <li><a href="#">Hackernews</a></li>
+            </ul>
+        </section>
+        <section class="footer__right">
+            <img src="./assets/icons/logoFooter.svg" alt="logo de Potatocoin">
+        </section>
     </footer>
 </body>
 </html>
